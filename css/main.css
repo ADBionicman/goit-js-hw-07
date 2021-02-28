@@ -3,7 +3,23 @@ body {
 }
 #gallery {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
+  padding: 0;
+}
+
+.gallery_item {
+  list-style: none;
+  width: calc((100% - 2 * 10px) / 3);
+}
+
+.gallery_image {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.gallery_item:not(:last-child) {
+  margin-right: 10px;
+  border: 1px solid cornsilk;
+  border-radius: 5px;
 }
