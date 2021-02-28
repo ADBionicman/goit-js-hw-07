@@ -1,17 +1,8 @@
-const refs = {
-    formRef: document.querySelector('input#validation-input')
-};
+const inputRef = document.querySelector('#font-size-control');
+const textRef = document.querySelector('#text');
 
-const onFocusOutHandler = function (event) {
-  const textLength = this.value.length;
-  const minTextLength = this.dataset.length;
-  if (textLength < minTextLength) {
-    this.classList.add('invalid');
-    this.classList.remove('valid');
-  } else {
-    this.classList.add('valid');
-    this.classList.remove('invalid');
-    } 
-};
+function fontSizeChange() {
+    textRef.setAttribute('style', `font-size: ${inputRef.value}px`);
+}
 
-refs.formRef.addEventListener('blur', onFocusOutHandler);
+inputRef.addEventListener('input', fontSizeChange);
