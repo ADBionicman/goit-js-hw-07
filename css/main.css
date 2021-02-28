@@ -17,3 +17,8 @@ body {
 #validation-input.invalid {
   border-color: #f44336;
 }
+
+div {
+  padding-left: 25px;
+  margin-top: 25px;
+}
