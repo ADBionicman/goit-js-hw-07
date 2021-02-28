@@ -6,6 +6,11 @@ body {
   padding: 0;
 }
 
+#gallery li {
+  list-style-type: none; /* Убираем маркеры */
+  padding-right: 20px;
+}
+
 #validation-input {
   border: 3px solid #bdbdbd;
 }
@@ -21,4 +26,9 @@ body {
 div {
   padding-left: 25px;
   margin-top: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: black;
+  border: solid 1px;
+  border-radius: 5px;
 }
