@@ -4,13 +4,13 @@ const refs = {
 
 const onFocus = function (event) {
   const textLength = this.value.length;
-  const minTextLength = this.dataset.length;
-  if (textLength < minTextLength) {
-    this.classList.add('invalid');
-    this.classList.remove('valid');
-  } else {
+ 
+  if (textLength === 6) {
     this.classList.add('valid');
     this.classList.remove('invalid');
+  } else {
+    this.classList.add('invalid');
+    this.classList.remove('valid');
     } 
 };
 
