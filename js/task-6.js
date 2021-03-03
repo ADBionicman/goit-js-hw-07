@@ -4,8 +4,9 @@ const refs = {
 
 const onFocus = function (event) {
   const textLength = this.value.length;
+  const minTextLength = Number(this.dataset.length);
  
-  if (textLength === 6) {
+  if (textLength === minTextLength) {
     this.classList.add('valid');
     this.classList.remove('invalid');
   } else {
